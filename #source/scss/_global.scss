@@ -2,6 +2,7 @@ $main-dark-text: rgba(18, 18, 18, 1);
 $second-text: rgba(51, 51, 51, 1);
 $accent-blue: rgba(165, 225, 211, 1);
 $second-blue: rgba(53, 88, 110, 1);
+$grey: rgba(141, 141, 141, 1);
 
 .bg-accentblue {
     background: rgba(#A5E1D3, 0.15);
@@ -127,6 +128,7 @@ img {
     color: $main-dark-text;
     line-height: 130%;
     margin-bottom: 60px;
+    text-transform: capitalize;
 
     span {
         font-weight: 400;

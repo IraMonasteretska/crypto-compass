@@ -351,7 +351,6 @@
     border: 1px solid #D8D8D8;
     margin-bottom: 20px;
     padding: 20px 0;
-    align-items: center;
     position: relative;
 
     &>div {
@@ -368,46 +367,31 @@
 
     .offerslistrow__logos {
         width: 100%;
-        max-width: 19%;
-        flex: 0 0 19%;
-        padding: 0 30px 0 40px;
+        max-width: 21%;
+        flex: 0 0 21%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
 
         .name {
+            width: 100%;
 
-            p {
-                font-size: 22px;
-                color: #35586E;
-                font-weight: 500;
-                line-height: 130%;
-                margin-bottom: 10px;
-
-                span {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 44px;
-                    height: 44px;
-                    background: #35586E;
-                    color: #fff;
-                    border-radius: 50%;
-                    margin-right: 8px;
-
-                }
-            }
-
-           
-
-
+          img {
+            vertical-align: top;
+            width: 100%;
+          }
         }
-
     }
 
     .offerslistrow__rating {
         width: 100%;
-        max-width: 12.5%;
-        flex: 0 0 12.5%;
+        max-width: 11%;
+        flex: 0 0 11%;
         text-align: center;
         padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .generalration {
             width: 63px;
@@ -447,9 +431,9 @@
 
     .offerslistrow__descr {
         width: 100%;
-        max-width: 51%;
-        flex: 0 0 51%;
-        padding: 0 30px;
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0 20px;
 
         p {
             margin: 0;
@@ -460,16 +444,18 @@
             margin-bottom: 16px;
             color: $main-dark-text;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 25px;
             text-transform: capitalize;
         }
     }
 
     .offerslistrow__explore {
         width: 100%;
-        max-width: 17.5%;
-        flex: 0 0 17.5%;
-        padding: 0 40px 0 30px;
+        max-width: 18%;
+        flex: 0 0 18%;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
 
         a {
             width: 100%;
@@ -487,10 +473,21 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 80px;
+    min-height: 34px;
+    min-width: 72px;
     padding: 5px 10px;
     font-weight: 500;
-    position: absolute;
-    right: -1px;
-    top: -1px;
+    position: relative;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 25px;
 }
+
+.offerslistrow-wrap > p {
+    text-align: center;
+    color: $grey;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+// ---
