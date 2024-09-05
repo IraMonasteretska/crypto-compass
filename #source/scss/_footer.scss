@@ -1,0 +1,126 @@
+footer.footer {
+    padding: 80px 0 0 0;
+    background: rgba(#A5E1D3, 0.15);
+}
+
+.footer__info {
+    p {
+        color: $second-text;
+        margin-bottom: 10px;
+    }
+
+    .footer__terms {
+        margin-top: 25px;
+        font-size: 14px;
+
+    }
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 25px;
+
+    img {
+        vertical-align: top;
+        max-width: 100%;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+}
+
+.footer__title {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 600;
+    color: $second-text;
+}
+
+.footer__navbox {
+    padding-left: 50px;
+    width: 100%;
+    max-width: 50%;
+    flex: 0 0 50%;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer__socials {
+
+    .footer__soclist {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background: $accent-blue;
+                transition: 0.3s;
+
+                svg {
+                    width: 24px;
+
+                    path {
+                        transition: 0.3s;
+                    }
+                }
+
+                &:hover {
+                    background: $second-blue;
+
+                    svg path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer__top {
+    padding-bottom: 80px;
+}
+
+.footer__botton {
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: $grey;
+        line-height: 130%;
+    }
+}
+
