@@ -15,22 +15,28 @@
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-6">
                     <a href="index.html" class="header__logo"><img src="img/general/logo.svg" alt="logo"></a>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-xl-7 header__menucolumn">
                     <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li class="dropdownn-item"><a href="#">Prices</a></li>
-                            <li class="dropdownn-item"><a href="#">Articles</a></li>
+                            <li class="dropdownn-item">
+                                <a href="#">Prices</a></li>
+                            <li class="dropdownn-item">
+                                <a href="#">Articles</a>
+                            </li>
                             <li class="dropdownn-item"><a href="#">Offer/Platform Listing</a></li>
                             <li class="dropdownn-item"><a href="#">Products</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-9 col-md-8 col-sm-7 col-6">
+                    <span class="mobsearchshow">
+                        <img src="img/general/search-icon.svg" alt="search button">
+                    </span>
                     <div class="header__searchbox">
                         <input type="text" placeholder="I'm looking for...">
                         <button>
@@ -38,6 +44,7 @@
                         </button>
                     </div>
                 </div>
+                <button class="burger"><span></span></button>
             </div>
         </div>
     </header>
@@ -52,16 +59,19 @@
                                 <img class="mainsldslide__img" src="img/main/slide1.jpg" alt="img">
                                 <div class="mainsldslide__info">
                                     <img class="mainsldslide__logo" src="img/main/slidelogo1.png" alt="img">
-                                    <h2>
-                                        Trade Smarter on<br> BYBIT Exchange
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab
-                                        et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
-                                    </p>
-                                    <a href="#" class="abluebtn">
-                                        Explore more
-                                    </a>
+                                    <div class="wrapper">
+                                        <h2>
+                                            Trade Smarter on<br> BYBIT Exchange
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam
+                                            lab
+                                            et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
+                                        </p>
+                                        <a href="#" class="abluebtn">
+                                            Explore more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,16 +80,18 @@
                                 <img class="mainsldslide__img" src="img/main/slide2.jpg" alt="img">
                                 <div class="mainsldslide__info">
                                     <img class="mainsldslide__logo" src="img/main/logo-test.png" alt="img">
-                                    <h2>
-                                        Your Wallet: Your Digital<br> Fort Knox
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab
-                                        et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
-                                    </p>
-                                    <a href="#" class="abluebtn">
-                                        Explore more
-                                    </a>
+                                    <div class="wrapper">
+                                        <h2>
+                                            Your Wallet: Your Digital<br> Fort Knox
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab
+                                            et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
+                                        </p>
+                                        <a href="#" class="abluebtn">
+                                            Explore more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -88,16 +100,18 @@
                                 <img class="mainsldslide__img" src="img/main/slide3.jpg" alt="img">
                                 <div class="mainsldslide__info">
                                     <img class="mainsldslide__logo" src="img/main/logo-test.png" alt="img">
-                                    <h2>
-                                        Explore Top Crypto<br> Tokens: The Future<br> of Digital Assets
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab
-                                        et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
-                                    </p>
-                                    <a href="#" class="abluebtn">
-                                        Explore more
-                                    </a>
+                                    <div class="wrapper">
+                                        <h2>
+                                            Explore Top Crypto<br> Tokens: The Future<br> of Digital Assets
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam lab
+                                            et fugiat id magnam minus nemo quam voluptatem. Culpa deleniti explica
+                                        </p>
+                                        <a href="#" class="abluebtn">
+                                            Explore more
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +234,7 @@
         <div class="info-section bg-accentblue">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6">
                         <h3 class="sect-title">
                             <span>Welcome to</span> <i>CryptoCompass:</i> <br>
                             Your Ultimate Crypto Resource Hub
@@ -233,7 +247,7 @@
                             convenient location.
                         </p>
                     </div>
-                    <div class="col-xl-5 offset-xl-1">
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
                         <ul class="checklist">
                             <li>
                                 <p class="title">Beginner-Friendly</p>
@@ -580,8 +594,6 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -589,7 +601,7 @@
             <div class="container">
                 <h3 class="sect-title">Latest News Articles</h3>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <a href="#" class="articlebox">
                             <div class="articlebox__img">
                                 <img src="img/main/article1.jpg" alt="img">
@@ -610,7 +622,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <a href="#" class="articlebox">
                             <div class="articlebox__img">
                                 <img src="img/main/article2.jpg" alt="img">
@@ -632,7 +644,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <a href="#" class="articlebox">
                             <div class="articlebox__img">
                                 <img src="img/main/article3.jpg" alt="img">
@@ -663,7 +675,7 @@
         <div class="footer__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-4">
                         <div class="footer__info">
                             <a class="footer__logo" href="index.html"><img src="img/general/logo-footer.svg"
                                     alt="logo"></a>
@@ -676,11 +688,12 @@
                                 need to stay informed and make smart decisions in the cryptocurrency space.
                             </p>
                             <p class="footer__terms">
-                                <a href="#">Terms & Conditions</a> - <a href="#">Privacy Policy</a> - <a href="#">Disclaimer</a>
+                                <a href="#">Terms & Conditions</a> - <a href="#">Privacy Policy</a> - <a
+                                    href="#">Disclaimer</a>
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-5">
                         <div class="footer__nav">
                             <div class="footer__navbox">
                                 <p class="footer__title">Home</p>
@@ -705,7 +718,7 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3">
                         <div class="footer__socials">
                             <p class="footer__title">Socials</p>
                             <ul class="footer__soclist">

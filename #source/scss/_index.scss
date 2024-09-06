@@ -37,7 +37,7 @@
 .mainsldslide__info {
     position: relative;
     z-index: 2;
-    padding: 50px 0 0 60px;
+    padding: 50px 20px 0 60px;
 }
 
 .mainsldslide__logo {
@@ -71,6 +71,7 @@
         min-height: 117px;
         padding: 16px;
         position: relative;
+        height: 100%;
 
         .imgwrap {
             width: 100%;
@@ -93,6 +94,10 @@
                 line-height: 130%;
                 color: $second-text;
                 margin: 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
             }
 
             .title {
@@ -376,10 +381,10 @@
         .name {
             width: 100%;
 
-          img {
-            vertical-align: top;
-            width: 100%;
-          }
+            img {
+                vertical-align: top;
+                width: 100%;
+            }
         }
     }
 
@@ -483,7 +488,7 @@
     margin-top: 25px;
 }
 
-.offerslistrow-wrap > p {
+.offerslistrow-wrap>p {
     text-align: center;
     color: $grey;
     margin-bottom: 30px;
@@ -782,4 +787,688 @@
         right: 0;
         margin: 0 auto;
     }
+}
+
+@media(max-width:1599.8px) {
+
+    .mainsldslide h2 {
+        font-size: 50px;
+        line-height: 120%;
+    }
+
+    .mainsldslide__logo {
+        margin-bottom: 40px;
+    }
+
+    .linkssection .linkbox .descr .title {
+        font-size: 18px;
+    }
+
+    .info-section .checklist li .title {
+        margin-bottom: 10px;
+    }
+
+    .info-section .checklist li {
+        margin-bottom: 30px;
+    }
+
+    .info-section .checklist li:after {
+        width: 60px;
+        height: 60px;
+        background-size: 30px;
+    }
+
+    .info-section .checklist li {
+        padding-left: 80px;
+    }
+
+    .offerslistrow .offerslistrow__logos .name {
+        text-align: center;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .offerslistrow .offerslistrow__descr .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .offerslistrow .offerslistrow__explore {
+        padding: 0 30px;
+    }
+
+    .offerslistrow {
+        margin-bottom: 10px;
+    }
+
+    .discovermore .discovermore__box.big .imgwrap {
+        height: 280px;
+    }
+
+    .discovermore .discovermore__box.big .imgwrap img {
+        max-height: 90%;
+    }
+
+    .discovermore .discovermore__box.big .descrwrap .title,
+    .discovermore .discovermore__box.small .descrwrap .title {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .discovermore .discovermore__box.big .descrwrap {
+        padding: 30px;
+    }
+
+    .discovermore .discovermore__box.small {
+        height: 218px;
+    }
+
+    .discovermore .discovermore__box .imgwrap img {
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+    }
+
+    .discovermore .discovermore__box.small .descrwrap .arrow {
+        margin-top: 30px;
+    }
+
+    .discovermore .discovermore__box.small .descrwrap {
+        padding: 20px 30px;
+    }
+
+    .articlebox__img {
+        height: 240px;
+    }
+
+
+
+    .bnrsection .bnrsection__descr p {
+        font-size: 36px;
+    }
+
+    .offerslistrow .offerslistrow__rating .generalration span {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:1499.8px) {
+
+    .bnrsection {
+        height: 500px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .mainsldslide {
+        height: 500px;
+    }
+
+    .mainsldslide__logo {
+        margin-bottom: 30px;
+    }
+
+    .mainsldslide h2 {
+        font-size: 46px;
+        margin-bottom: 30px;
+    }
+
+    .mainsldslide a {
+        margin-top: 35px;
+    }
+
+    .linkssection .linkbox .descr p {
+        font-size: 14px;
+    }
+
+    .linkssection .linkbox.biglogo .imgwrap {
+        max-width: 120px;
+        flex: 0 0 120px;
+    }
+
+    .linkssection .linkbox.biglogo .descr {
+        max-width: calc(100% - 120px);
+        flex: 0 0 calc(100% - 120px);
+    }
+
+    .subscribe-section .imgwrap {
+        padding-right: 40px;
+    }
+
+    .subscribe-section .subssectinfo .subssectinfo__field {
+        margin-bottom: 15px;
+    }
+
+    .offerslistrow .offerslistrow__logos {
+        max-width: 18%;
+        flex: 0 0 18%;
+    }
+
+    .offerslistrow .offerslistrow__rating {
+        max-width: 14%;
+        flex: 0 0 14%;
+    }
+
+    .offerslistrow .offerslistrow__descr p {
+        font-size: 15px;
+    }
+
+    .bnrsection .bnrsection__descr {
+        padding-bottom: 50px;
+    }
+
+    .bnrsection .bnrsection__descr p {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .linkssection .linkbox .descr .title {
+        font-size: 16px;
+    }
+
+    .linkssection .linkbox {
+        padding: 10px;
+        min-height: 100px;
+    }
+
+    .linkssection .linkbox.biglogo .imgwrap {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .linkssection .linkbox.biglogo .descr {
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .offerslistrow .offerslistrow__explore {
+        padding: 0 15px;
+    }
+
+    .discovermore .discovermore__box.big .descrwrap .title,
+    .discovermore .discovermore__box.small .descrwrap .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .articlebox__img {
+        height: 180px;
+    }
+
+    .articlebox__descr {
+        padding: 20px 15px;
+        height: 220px;
+    }
+
+
+
+
+    .articlebox__descr .date {
+        font-size: 14px;
+    }
+
+    .offerslistrow .offerslistrow__descr .title {
+        font-size: 20px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .mainsldslide__info {
+        padding: 40px 20px 0 40px;
+    }
+
+    .mainsldslide h2 {
+        font-size: 42px;
+    }
+
+    .mainsldslide {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(#000, 0.4);
+        }
+    }
+
+    .linkssection .linkbox {
+        padding: 20px;
+    }
+
+    .linkssection .linkbox .descr .title {
+        font-size: 22px;
+    }
+
+    .linkssection .linkbox .descr p {
+        font-size: 18px;
+    }
+
+    .linkssection .linkbox.biglogo .imgwrap {
+        max-width: 140px;
+        flex: 0 0 140px;
+    }
+
+    .linkssection .linkbox.biglogo .descr {
+        max-width: calc(100% - 140px);
+        flex: 0 0 calc(100% - 140px);
+    }
+
+    .linkssection .linkbox .descr {
+        padding-left: 25px;
+    }
+
+    .subscribe-section .imgwrap {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .subscribe-section .subssectinfo {
+        padding-left: 0;
+    }
+
+    .linkssection .col-lg-4 {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .info-section .checklist {
+        margin-top: 30px;
+    }
+
+    .offerslistrow .offerslistrow__logos,
+    .offerslistrow .offerslistrow__rating {
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0;
+        border-bottom: 1px solid #D8D8D8;
+        padding-bottom: 10px;
+    }
+
+    .offerslistrow .offerslistrow__descr {
+        max-width: calc(100% - 180px);
+        flex: 0 0 calc(100% - 180px);
+    }
+
+    .offerslistrow .offerslistrow__explore {
+        max-width: 180px;
+        flex: 0 0 180px;
+        padding: 0;
+    }
+
+    .offerslistrow>div {
+        border-right: none;
+    }
+
+    .offerslistrow {
+        padding: 20px;
+    }
+
+    .offerslistrow .offerslistrow__logos .name img {
+        max-width: 190px;
+    }
+
+    .offerslistrow .offerslistrow__logos .name {
+        text-align: left;
+    }
+
+    .ratingwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+
+        .generalration {
+            order: 2;
+        }
+
+        .stars-rating {
+            order: 1;
+            margin: 0 15px 0 0 !important;
+        }
+    }
+
+    .offerslistrow .offerslistrow__descr,
+    .offerslistrow .offerslistrow__explore {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    .offerslistrow .offerslistrow__descr .title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .offerslistrow .offerslistrow__descr p {
+        font-size: 16px;
+    }
+
+    .offerslistrow .offerslistrow__explore {
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .bnrsection {
+        height: 400px;
+    }
+
+    .bnrsection .bnrsection__descr {
+        padding-bottom: 30px;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    .discovermore .discovermore__box {
+        margin-bottom: 20px;
+    }
+
+    .discovermore .discovermore__box.small {
+        display: block;
+        height: auto;
+
+        .imgwrap {
+            max-width: 100%;
+            border-right: none;
+            border-bottom: 1px solid #D8D8D8;
+            height: 280px;
+        }
+
+        .descrwrap .arrow {
+            margin: 0;
+            position: absolute;
+            right: 30px;
+            bottom: 40px;
+        }
+    }
+
+    .discovermore .discovermore__box.big .descrwrap .title,
+    .discovermore .discovermore__box.small .descrwrap .title {
+        font-size: 24px;
+    }
+
+    .discovermore .discovermore__box .imgwrap img {
+        max-width: 100%;
+        max-height: 90%;
+    }
+
+    .discovermore .discovermore__box.small .descrwrap {
+        max-width: calc(100% - 80px);
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .mainsldslide__info {
+        padding: 30px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 20px;
+    }
+
+    .offerslistrow .offerslistrow__descr,
+    .offerslistrow .offerslistrow__explore {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .articlebox__img {
+        height: 220px;
+    }
+
+    .articlebox__descr h6 {
+        font-size: 22px;
+    }
+
+    .articlebox {
+        margin-bottom: 30px;
+    }
+
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .mainsldslide__logo {
+        max-height: 26px;
+        position: absolute;
+        left: 20px;
+        top: 30px;
+    }
+
+    .mainsldslide__info {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 60px 20px 50px;
+    }
+
+    .mainsldslide h2 {
+        font-size: 30px;
+        text-align: center;
+
+        br {
+            display: none;
+        }
+    }
+
+    .mainsldslide p {
+        text-align: center;
+    }
+
+    .mainsldslide a {
+        margin: 25px auto;
+        display: flex;
+        width: 180px;
+    }
+
+    .mainsldslide {
+        height: calc(100vh - 110px);
+    }
+
+    .linkssection .linkbox {
+        padding: 16px;
+    }
+
+    .linkssection .linkbox .descr {
+        padding-left: 16px;
+    }
+
+    .linkssection .linkbox.biglogo .imgwrap {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .linkssection .linkbox.biglogo .descr {
+        max-width: calc(100% - 100px);
+        flex: 0 0 calc(100% - 100px);
+    }
+
+    .linkssection .col-lg-4 {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-section .subssectinfo .subssectinfo__field input,
+    .subscribe-section .subssectinfo .subssectinfo__field button {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .subscribe-section .subssectinfo .subssectinfo__field input {
+        height: 50px;
+        margin-bottom: 9px;
+    }
+
+    .subscribe-section .subssectinfo .check-filed label:after {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .info-section .checklist {
+        margin-top: 40px;
+    }
+
+    .info-section .checklist li {
+        padding-left: 75px;
+    }
+
+    .offerslistrow {
+        padding: 20px 12px;
+    }
+
+    .offerslistrow .offerslistrow__rating .generalration {
+        display: none;
+    }
+
+    .offerslistrow .offerslistrow__rating .stars-rating {
+        margin-right: 0 !important;
+    }
+
+    .offerslistrow .offerslistrow__logos .name img {
+        max-width: 120px;
+    }
+
+    .offerslistrow__label {
+        margin-top: 10px;
+    }
+
+    .offerslistrow-wrap>p {
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .offerslistrow-wrap:last-child p {
+        margin-bottom: 0;
+    }
+
+    .bnrsection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(#000, 0.4);
+        }
+
+        .bnrsection__descr {
+            padding-bottom: 0;
+
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .discovermore {
+
+        .discovermore__box.big,
+        .discovermore__box.small {
+
+            .imgwrap {
+                height: 200px;
+            }
+
+
+            .descrwrap {
+                padding: 20px 12px;
+                height: auto;
+                max-width: 100%;
+
+                .title {
+                    font-size: 18px;
+                }
+
+                p {
+                    padding-right: 0;
+                    font-size: 14px;
+                }
+
+                .arrow {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    margin-top: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+
+    .articlebox__descr {
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+    .offerslistrow .offerslistrow__descr .title {
+        margin-bottom: 10px;
+    }
+
+    .linkssection .linkbox .descr .title,
+    .info-section .checklist li .title,
+    .offerslistrow .offerslistrow__descr .title,
+    .articlebox__descr h6 {
+        font-size: 18px;
+    }
+
+    .subscribe-section .subssectinfo label {
+        font-size: 16px;
+    }
+
+    .linkssection .linkbox .descr p,
+    .info-section .checklist li p,
+    .offerslistrow .offerslistrow__descr p,
+    .articlebox__descr .descr {
+        font-size: 14px;
+    }
+
+    .subscribe-section .subssectinfo .title {
+        font-size: 24px;
+    }
+
+    .subscribe-section,
+    .info-section,
+    .offerslist,
+    .discovermore,
+    .articlessection {
+        padding: 50px 0;
+    }
+
 }

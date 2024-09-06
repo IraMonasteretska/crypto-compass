@@ -139,3 +139,30 @@ img {
         color: #35586E;
     }
 }
+
+@media(max-width:1599.8px) {
+    .sect-title {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:1499.8px) {
+    .abluebtn {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .sect-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .sect-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}

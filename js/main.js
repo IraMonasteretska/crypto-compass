@@ -41,9 +41,25 @@ $(document).ready(function () {
         // },
     });
 
+    // burger
+    $('.burger').on('click', function () {
+        $('.header__mobile-menu').toggleClass('active');
+        $('body').toggleClass('mob-menu');
+        $(this).toggleClass('on');
+    });
 
+    // Show search field - mobile
 
+    $('.mobsearchshow').click(function(){
+        $('.header__searchbox').toggleClass('show');
+    });
 
+    // menu
+    $('header.header nav>ul>li.dropdownn-item>a').click(function(e){
+        e.preventDefault();
+        $('.dropdownn-item').not($(this).parent('.dropdownn-item')).removeClass('active');
+        $(this).parent('.dropdownn-item').toggleClass('active');
+    });
 
 
 
