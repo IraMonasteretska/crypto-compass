@@ -46,21 +46,70 @@ $(document).ready(function () {
         $('.header__mobile-menu').toggleClass('active');
         $('body').toggleClass('mob-menu');
         $(this).toggleClass('on');
+
+        $('.header__menucolumn').toggleClass('active')
     });
 
     // Show search field - mobile
 
-    $('.mobsearchshow').click(function(){
+    $('.mobsearchshow').click(function () {
         $('.header__searchbox').toggleClass('show');
     });
 
     // menu
-    $('header.header nav>ul>li.dropdownn-item>a').click(function(e){
-        e.preventDefault();
-        $('.dropdownn-item').not($(this).parent('.dropdownn-item')).removeClass('active');
-        $(this).parent('.dropdownn-item').toggleClass('active');
+    // $('header.header nav>ul>li.dropdownn-item>a').click(function (e) {
+    //     e.preventDefault();
+    //     $('.dropdownn-item').not($(this).parent('.dropdownn-item')).removeClass('active');
+    //     $(this).parent('.dropdownn-item').toggleClass('active');
+
+    //     $('.mmenu').not($(this).next('.mmenu')).removeClass('tets');
+    //     $(this).next('.mmenu').toggleClass('tets');
+
+    // });
+    // <1200
+    if ($(window).width() < 1200) {
+        $('header.header nav>ul>li.dropdownn-item>a').click(function (e) {
+            e.preventDefault();
+            $(this).next('.mmenu').toggleClass('show');
+
+        });
+    }
+    else {
+        $('header.header nav>ul>li.dropdownn-item>a').click(function (e) {
+            e.preventDefault();
+            $('.dropdownn-item').not($(this).parent('.dropdownn-item')).removeClass('active');
+            $(this).parent('.dropdownn-item').toggleClass('active');
+
+            $('.mmenu').not($(this).next('.mmenu')).removeClass('tets');
+            $(this).next('.mmenu').toggleClass('tets');
+
+        });
+    }
+
+    // hero slider
+
+    var swiper = new Swiper(".heroslider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
     });
 
+    // Prices - buttons
+    $('.tablesection__sortrow button').click(function(){
+        $('.tablesection__sortrow button').removeClass('active');
+        $(this).addClass('active');
+    });
+    
+    // data tables
+    $('#myTable').DataTable({
+        "dom": 'rt<"bottom"ipl><"clear">',
+    });
 
 
 })

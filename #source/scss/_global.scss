@@ -12,6 +12,10 @@ $grey: rgba(141, 141, 141, 1);
     background: #F8F8FF;
 }
 
+.bg-white {
+    background: #fff;
+}
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -140,6 +144,12 @@ img {
     }
 }
 
+.text-end {
+    text-align: right;
+}
+// [class^="btn-"] {}
+
+
 @media(max-width:1599.8px) {
     .sect-title {
         margin-bottom: 50px;
@@ -166,3 +176,5 @@ img {
         margin-bottom: 30px;
     }
 }
+
+
