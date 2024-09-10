@@ -229,6 +229,8 @@
         margin-top: 60px;
     }
 
+
+
 }
 
 .tablesection__sortrow {
@@ -251,6 +253,7 @@
         margin-right: 6px;
         background: #fff;
         cursor: pointer;
+        margin-bottom: 4px;
 
         &:last-child {
             margin-right: 0;
@@ -259,7 +262,7 @@
         &:nth-child(1) {
             margin-right: 56px;
         }
-        
+
         svg {
             width: 100%;
             max-width: 24px;
@@ -300,7 +303,8 @@
         }
 
         &:hover {
-            border: 1px solid #35586E;
+            border: 1px solid #fff;
+            box-shadow: 0 2px 12px rgba(#333, 0.06);
         }
     }
 }
@@ -342,5 +346,495 @@
 .subscribe-section.blue {
     background: $second-blue;
 
+    .sect-title {
+        margin: 0;
+        color: #fff;
+    }
+
+    .subssectinfo label {
+        color: #fff;
+    }
+
+    .subssectinfo .check-filed label:after {
+        background-color: #fff;
+    }
+
+    .subssectinfo .subssectinfo__field button {
+        &:hover {
+            background: #fff;
+            color: #35586E;
+        }
+    }
+
+    .subssectinfo .check-filed input:checked+label:after {
+        background-image: url(../img/general/check-black.svg);
+        background-color: #fff;
+    }
+
+    .subssectinfo .subssectinfo__field input {
+        &:focus {
+            border-color: #fff;
+        }
+    }
+}
+
+.sorttable {
+    padding-top: 30px;
+
+    thead tr th {
+        border: none !important;
+        outline: none !important;
+        text-align: right !important;
+        padding: 10px !important;
+
+
+        .dt-column-order {
+            &::before {
+                display: none !important;
+            }
+        }
+
+        &.sort {
+            .dt-column-order {
+                &::after {
+                    content: '' !important;
+                    width: 18px;
+                    height: 18px;
+                    opacity: 1 !important;
+                    background: url('../img/prices/theadarrow.svg') no-repeat center / 100%;
+                    transform: translateY(-50%) rotate(0);
+                }
+            }
+
+            .dt-column-title {
+                padding-right: 15px;
+            }
+
+        }
+
+        &.text-left {
+            text-align: left !important;
+        }
+    }
+
+    .abluebtn {
+        min-width: initial;
+        width: 98px;
+    }
+}
+
+table.dataTable thead th {
+    font-weight: 400;
+    color: #121212;
+}
+
+.sorttable th:not(.sort) {
+    pointer-events: none;
+
+    .dt-column-order {
+        display: none;
+    }
+}
+
+table.dataTable>tbody>tr>td,
+table.dataTable thead>tr>th {
+    background: transparent;
+    box-shadow: none !important;
+    text-align: right;
+    color: #121212;
+
+    &.text-left {
+        text-align: left;
+    }
+}
+
+.tblcoinname {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    i {
+        width: 100%;
+        max-width: 24px;
+        flex: 0 0 24px;
+        height: 24px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+        max-width: calc(100% - 24px);
+        flex: 0 0 calc(100% - 24px);
+        padding-left: 6px;
+        line-height: 130%;
+        color: #121212;
+        white-space: normal;
+
+        span {
+            text-transform: uppercase;
+            color: #8D8D8D;
+        }
+    }
+}
+
+.rtbox {
+    img {
+        width: 18px;
+        vertical-align: middle;
+        margin-top: -3px;
+    }
+
+    &.green {
+        color: #00A83E;
+    }
+
+    &.grey {
+        color: #8D8D8D;
+    }
+}
+
+.graph {
+    width: 150px;
+}
+
+#myTable_wrapper {
+    .bottom {
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .dt-info {
+            width: 100%;
+            max-width: 25%;
+            flex: 0 0 25%;
+            color: #8D8D8D;
+            font-size: 16px;
+        }
+
+        .dt-paging {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+            text-align: center;
+        }
+
+        .dt-length {
+            width: 100%;
+            max-width: 25%;
+            flex: 0 0 25%;
+            text-align: right;
+
+            label {
+                margin-right: 10px;
+            }
+
+            select {
+                width: 67px;
+                height: 50px;
+                border-radius: 4px;
+                background: #fff;
+                border: 1px solid #D8D8D8;
+                color: #121212;
+                font-size: 16px;
+                padding-right: 20px;
+                /* Збільшує відступ всередині селекту */
+                background-position: calc(100% - 10px) center;
+                /* Посуває стрілку від краю */
+                outline: none;
+            }
+        }
+
+    }
+}
+
+div.dt-container .dt-paging .dt-paging-button.current,
+div.dt-container .dt-paging .dt-paging-button.current:hover,
+div.dt-container .dt-paging .dt-paging-button:hover,
+div.dt-container .dt-paging .dt-paging-button:active {
+    border: none !important;
+    box-shadow: none;
+    background: transparent;
+    outline: none;
+    color: $second-text !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button {
+    font-size: 20px;
+    padding: 10px !important;
+    margin: 0 10px !important;
+    border: none !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button.dt-paging-button.previous {
+    width: 38px;
+    height: 38px;
+    background: url('../img/prices/pag-prev.png') no-repeat center / 100% !important;
+    text-indent: -9999px;
+    padding: 0 !important;
+    cursor: pointer;
+    border: none !important;
+}
+
+div.dt-container .dt-paging .dt-paging-button.dt-paging-button.next {
+    width: 38px;
+    height: 38px;
+    background: url('../img/prices/pag-next.png') no-repeat center / 100% !important;
+    text-indent: -9999px;
+    padding: 0 !important;
+    cursor: pointer;
+    border: none !important;
+}
+
+
+
+@media(max-width:1599.8px) {
+    .herosecr__info h1 {
+        font-size: 50px;
+    }
+
+    .usefulinfo .title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .herosecr__info h1 {
+        font-size: 42px;
+    }
+
+    .heroscreengrid {
+        right: -35px;
+        max-width: 550px;
+    }
+
+    .herosecr__info {
+        width: calc(100% - 50px);
+    }
+
+    .heroslider__slide .heroslider__slide-right {
+        max-width: 120px;
+        flex: 0 0 120px;
+    }
+
+    .heroslider__slide .heroslider__slide-left {
+        max-width: calc(100% - 120px);
+        flex: 0 0 calc(100% - 120px);
+        padding-right: 15px;
+    }
+
+    .tablesection__sortrow {
+        white-space: nowrap;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #d8d8d85b;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #bebebe;
+            border-radius: 6px;
+        }
+    }
+
+    // .tablewrapper {
+    //     overflow: auto;
+    //     width: 100%;
+    //     position: relative;
+    //     padding-bottom: 30px;
+
+    //     .sorttable {
+    //         width: 1300px !important;
+    //     }
+
+
+    // }
+
+    .dt-scroll-headInner,
+    .dt-scroll-body {
+        table {
+            width: 1300px !important;
+        }
+    }
+
+    table.dataTable>tbody>tr>th,
+    table.dataTable>tbody>tr>td {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .graph {
+        width: 120px;
+    }
+
+    .usefulinfo .title {
+        font-size: 32px;
+    }
+
+    .heroslider__slide .heroslider__slide-left p {
+        font-size: 15px;
+    }
+
+    .dt-scroll-body {
+        &::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #d8d8d85b;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #bebebe;
+            border-radius: 6px;
+        }
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .herosecr__info {
+        width: calc(100% - 20px);
+        padding: 20px 0;
+    }
+
+    .herosecr__info h1 {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .herosecr .text-end {
+        text-align: left;
+    }
+
+    .heroscreengrid {
+        display: none;
+    }
+
+    .heroslider__wrap {
+        margin-right: 0;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .heroslider__slide .heroslider__slide-left h6 {
+        font-size: 24px;
+    }
+
+    .subscribe-section.blue .sect-title {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .herosecr__info h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .herosecr {
+        padding-top: 40px;
+    }
+
+    .breadcrumbsbox ul li {
+        font-size: 14px;
+    }
+
+    .heroslider__slide .heroslider__slide-right {
+        max-width: 100%;
+        flex: 0 0 100%;
+        order: 1;
+        margin-bottom: 20px;
+        display: none;
+    }
+
+    .heroslider__slide .heroslider__slide-left {
+        max-width: 100%;
+        flex: 0 0 100%;
+        order: 2;
+
+    }
+
+    .heroslider__slide .heroslider__slide-left h6 {
+        padding-right: 30px;
+    }
+
+    .herosecr {
+        padding-top: 30px;
+    }
+
+    .tablesection__sortrow button:first-child {
+        margin-right: 6px;
+    }
+
+    .tblcoinname {
+        max-width: 180px;
+    }
+
+    table.dataTable>tbody>tr>td,
+    table.dataTable>tbody>tr>th {
+        font-size: 14px;
+    }
+
+    table.dataTable.display>tbody tr>td,
+    table.dataTable.display>thead tr>th  {
+        &:nth-child(1) {
+            width: 50px !important;
+            max-width: 50px !important;
+        }
+
+        &:nth-child(2) {
+            width: 150px !important;
+            max-width: 150px !important;
+            min-width: initial !important;
+        }
+    }
+
+    #myTable_wrapper .bottom .dt-info,
+    #myTable_wrapper .bottom .dt-paging,
+    #myTable_wrapper .bottom .dt-length {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    #myTable_wrapper .bottom {
+        padding-top: 0;
+    }
+
+    #myTable_wrapper .bottom .dt-info,
+    #myTable_wrapper .bottom .dt-paging {
+        margin-bottom: 25px;
+    }
+
+    .usefulinfo .title {
+        font-size: 28px;
+    }
+
+    .col-md-4:last-child .articlebox {
+        margin-bottom: 0;
+    }
+
+
+
+    .pricelist .pricelist-descr {
+        font-size: 14px;
+    }
+
+    .pricelist,
+    .usefulinfo {
+        padding: 50px 0;
+    }
 
 }

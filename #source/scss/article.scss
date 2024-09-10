@@ -1,0 +1,141 @@
+.articlewrapper {
+    padding: 60px 0 80px;
+}
+
+.article__topsect {
+    margin: 40px 0 80px 0;
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 20px;
+
+
+    h1 {
+        color: $second-blue;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 40px;
+    }
+
+    .subtitle {
+        margin-bottom: 40px;
+        color: $second-text;
+        max-width: 570px;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        span {
+            width: 100%;
+            display: block;
+            max-width: calc(100% - 38px);
+            flex: 0 0 calc(100% - 38px);
+            padding-right: 20px;
+            color: $second-text;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 38px;
+            flex: 0 0 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #EEF7F5;
+            transition: 0.3s;
+
+            svg {
+                width: 20px;
+                margin-left: -2px;
+
+                path {
+                    transition: 0.3s;
+                }
+            }
+
+            &:hover {
+                background: $second-blue;
+
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+
+            &:active {
+                background: #4D738A;
+            }
+
+        }
+
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+
+        .author__logo {
+            width: 100%;
+            max-width: 60px;
+            flex: 0 0 60px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+
+        p {
+            padding-left: 20px;
+            margin: 0;
+            color: $second-text;
+            width: 100%;
+            max-width: calc(100% - 60px);
+            flex: 0 0 calc(100% - 60px);
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+
+
+}
+
+.youwilllearn {
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    padding: 20px;
+
+    .title {
+        margin-bottom: 25px;
+        font-size: 22px;
+        color: $main-dark-text;
+        line-height: 130%;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: $second-text;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

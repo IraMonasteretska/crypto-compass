@@ -29,6 +29,11 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         // navigation: {
         //     nextEl: ".swiper-button-next",
         //     prevEl: ".swiper-button-prev",
@@ -85,7 +90,7 @@ $(document).ready(function () {
 
         });
     }
-
+    
     // hero slider
 
     var swiper = new Swiper(".heroslider", {
@@ -98,18 +103,36 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+
     });
 
     // Prices - buttons
-    $('.tablesection__sortrow button').click(function(){
+    $('.tablesection__sortrow button').click(function () {
         $('.tablesection__sortrow button').removeClass('active');
         $(this).addClass('active');
     });
-    
+
     // data tables
-    $('#myTable').DataTable({
-        "dom": 'rt<"bottom"ipl><"clear">',
-    });
+    if ($('.sorttable').length) {
+        $('#myTable').DataTable({
+            "dom": 'rt<"bottom"ipl><"clear">',
+            "language": {
+                "info": "Showing _START_ - _END_ out of _TOTAL_",
+                "lengthMenu": "Show rows: _MENU_"
+            },
+            "pagingType": "simple_numbers",
+            "lengthChange": true,
+            "scrollX": true,
+            fixedColumns: false,
+        });
+
+      
+    }
 
 
 })
