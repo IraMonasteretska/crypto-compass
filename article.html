@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prices</title>
+    <title>Article</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lib/datatables.css">
+    <link rel="stylesheet" href="css/lib/fancybox.css">
+    <link rel="stylesheet" href="css/lib/plyr.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="container">
             <div class="row align-items-center">
@@ -381,75 +383,520 @@
     <main class="main">
         <div class="articlewrapper">
             <div class="container">
-                <div class="col-xl-7">
-                    <div class="breadcrumbsbox">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li>Ethereum 2.0 Upgrade Boosts Network Efficiency</li>
-                        </ul>
-                    </div>
-                    <article>
-                        <div class="article__topsect">
-                            <h1>
-                                Ethereum 2.0 Upgrade Boosts Network Efficiency
-                            </h1>
-                            <p class="subtitle">
-                                Ethereum 2.0, also known as Eth2 or Serenity, is a comprehensive upgrade to the existing
-                                Ethereum blockchain.
-                            </p>
-                            <p class="date">
-                                <span>August 2, 2024</span>
-                                <a href="#">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
-                                            stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M7 11L13 14" stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M4 13C5.65685 13 7 11.6569 7 10C7 8.34315 5.65685 7 4 7C2.34315 7 1 8.34315 1 10C1 11.6569 2.34315 13 4 13Z"
-                                            stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M13 5L7 8" stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M16 7C17.6569 7 19 5.65685 19 4C19 2.34315 17.6569 1 16 1C14.3431 1 13 2.34315 13 4C13 5.65685 14.3431 7 16 7Z"
-                                            stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </p>
-                            <div class="author">
-                                <div class="author__logo">
-                                    <img src="img/article/author-logo.png" alt="img">
-                                </div>
-                                <p>
-                                    By <span>CryptoCompass Staff</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="youwilllearn">
-                            <p class="title">
-                                From this article you will learn:
-                            </p>
-
+                <div class="row">
+                    <div class="col-xl-7">
+                        <div class="breadcrumbsbox">
                             <ul>
-                                <li>What is Ethereum 2.0?</li>
-                                <li>Key Features and Improvements</li>
-                                <li>The Transition Process</li>
-                                <li>Conclusion</li>
+                                <li><a href="#">Home</a></li>
+                                <li>Ethereum 2.0 Upgrade Boosts Network Efficiency</li>
                             </ul>
                         </div>
+                        <article>
+                            <div class="article__topsect">
+                                <h1>
+                                    Ethereum 2.0 Upgrade Boosts Network Efficiency
+                                </h1>
+                                <p class="subtitle">
+                                    Ethereum 2.0, also known as Eth2 or Serenity, is a comprehensive upgrade to the
+                                    existing
+                                    Ethereum blockchain.
+                                </p>
+                                <p class="date">
+                                    <span>August 2, 2024</span>
+                                    <a href="#">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
+                                                stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M7 11L13 14" stroke="#35586E" stroke-width="1.4"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M4 13C5.65685 13 7 11.6569 7 10C7 8.34315 5.65685 7 4 7C2.34315 7 1 8.34315 1 10C1 11.6569 2.34315 13 4 13Z"
+                                                stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13 5L7 8" stroke="#35586E" stroke-width="1.4"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M16 7C17.6569 7 19 5.65685 19 4C19 2.34315 17.6569 1 16 1C14.3431 1 13 2.34315 13 4C13 5.65685 14.3431 7 16 7Z"
+                                                stroke="#35586E" stroke-width="1.4" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </p>
+                                <div class="author">
+                                    <div class="author__logo">
+                                        <img src="img/article/author-logo.png" alt="img">
+                                    </div>
+                                    <p>
+                                        By <span>CryptoCompass Staff</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="youwilllearn">
+                                <p class="title">
+                                    From this article you will learn:
+                                </p>
+
+                                <ul>
+                                    <li>What is Ethereum 2.0?</li>
+                                    <li>Key Features and Improvements</li>
+                                    <li>The Transition Process</li>
+                                    <li>Conclusion</li>
+                                </ul>
+                            </div>
+
+                            <div class="majormilestone">
+                                <p>
+                                    Major Milestone: The Ethereum network undergoes a significant upgrade, enhancing
+                                    scalability, security, and energy efficiency. This long-awaited transition to
+                                    proof-of-stake promises to reduce energy consumption by 99%, making Ethereum more
+                                    sustainable and better equipped to handle increased demand.
+                                </p>
+                            </div>
+
+                            <h3>
+                                What is Ethereum 2.0?
+                            </h3>
+
+                            <p>
+                                Ethereum 2.0, also known as Eth2 or Serenity, is a comprehensive upgrade to the existing
+                                Ethereum blockchain. This upgrade aims to address some of the critical limitations of
+                                the
+                                original Ethereum network, such as scalability, security, and energy consumption. The
+                                most
+                                notable change in Ethereum 2.0 is the shift from the current proof-of-work (PoW)
+                                consensus
+                                mechanism to a more efficient <a href="#">proof-of-stake</a> (PoS) system.
+                            </p>
+
+                            <div class="imggroup">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="img/article/article-img1.jpg" data-fancybox="gal1">
+                                            <div class="imgwrap">
+                                                <img src="img/article/article-img1.jpg" alt="img">
+                                            </div>
+                                            <img class="zoomimg" src="img/article/zoom-ic.png" alt="zoom">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="img/article/article-img2.jpg" data-fancybox="gal1">
+                                            <div class="imgwrap">
+                                                <img src="img/article/article-img2.jpg" alt="img">
+                                            </div>
+                                            <img class="zoomimg" src="img/article/zoom-ic.png" alt="zoom">
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="img/article/article-img3.jpg" data-fancybox="gal1">
+                                            <div class="imgwrap">
+                                                <img src="img/article/article-img3.jpg" alt="img">
+                                            </div>
+                                            <img class="zoomimg" src="img/article/zoom-ic.png" alt="zoom">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>
+                                Key Features and Improvements
+                            </h3>
+
+                            <ol>
+                                <li>
+                                    <b> Proof-of-Stake (PoS) Consensus:</b> The transition to PoS is perhaps the most
+                                    significant
+                                    change in Ethereum 2.0. Unlike PoW, which relies on energy-intensive mining
+                                    processes,
+                                    PoS allows validators to create new blocks and verify transactions based on the
+                                    amount
+                                    of ETH they hold and are willing to "stake" as collateral. This method drastically
+                                    reduces the network's energy consumption by approximately 99%, making Ethereum more
+                                    environmentally friendly.
+                                </li>
+                                <li>
+                                    <b>Increased Scalability:</b> Ethereum 2.0 introduces shard chains, which divide the
+                                    network
+                                    into smaller, manageable segments called shards. Each shard operates independently,
+                                    processing transactions and smart contracts in parallel. This approach significantly
+                                    enhances the network's capacity to handle more transactions per second, addressing
+                                    the
+                                    scalability issues that have plagued Ethereum in the past.
+                                </li>
+                                <li>
+                                    <b>Enhanced Security:</b> The PoS mechanism, combined with the introduction of shard
+                                    chains,
+                                    enhances the network's overall security. Validators are incentivized to act
+                                    honestly, as
+                                    malicious behavior could result in the loss of their staked ETH. Additionally, the
+                                    decentralized nature of shard chains makes it more challenging for any single entity
+                                    to
+                                    compromise the entire network.
+                                </li>
+                            </ol>
+
+                            <div class="videosection">
+                                <video id="player" playsinline controls poster="img/article/video-placeholder.jpg">
+                                    <source src="video/video.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+
+                            <h3>Table template</h3>
+                            <p>
+                                Alias architecto asperiores, dignissimos illum ipsam ipsum itaque:
+                            </p>
+
+                            <div class="tablewrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Table template</th>
+                                            <th>dolor sit amet</th>
+                                            <th>consectetur adipisicing</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Alias animi labque, deserunt distinctio
+                                            </td>
+                                            <td>123</td>
+                                            <td>456.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Aut blanditiis esse et illum maxim
+                                            </td>
+                                            <td>architecto</td>
+                                            <td>dignissimos</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Assumenda consequuntur
+                                            </td>
+                                            <td>dicta enim</td>
+                                            <td>—</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Ad aliquid amet
+                                            </td>
+                                            <td>error eveniet</td>
+                                            <td>expedita</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>Listing box</h3>
+                            <p>
+                                Alias architecto asperiores, dignissimos illum ipsam ipsum itaque:
+                            </p>
+
+                            <div class="offerslists offerslists__article">
+                                <div class="offerslistrow-wrap">
+                                    <div class="offerslistrow">
+                                        <div class="offerslistrow__logos">
+                                            <div class="name">
+                                                <img src="img/main/logo1.png" alt="logo">
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__rating">
+                                            <div class="ratingwrapper">
+                                                <div class="generalration">
+                                                    <img src="img/main/star.svg" alt="rating">
+                                                    <span>
+                                                        4.9
+                                                    </span>
+                                                </div>
+                                                <div class="stars-rating">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star2.svg" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__descr">
+                                            <p class="title">offer from Binance</p>
+                                            <p>
+                                                Binance is the world's leading blockchain ecosystem, with a product
+                                                suite
+                                                that
+                                                includes
+                                                the largest digital asset exchange.
+                                            </p>
+                                            <span class="offerslistrow__label">
+                                                popular
+                                            </span>
+                                        </div>
+                                        <div class="offerslistrow__explore">
+                                            <a href="#" class="abluebtn">
+                                                Explore Offer
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        *Terms & Conditions: Alias animi labque, deserunt distinctio eum excepturi fuga
+                                        iure
+                                        labore
+                                        magni molestias mollitia natus, officia pofro Alias architecto asperiores,
+                                        dignissimos illum
+                                        ipsam ipsum itaque, natus necessitatibus officiis, perferendis quae sed ullam
+                                        veniam
+                                        vitae
+                                        voluptas
+                                    </p>
+                                </div>
+                                <div class="offerslistrow-wrap">
+                                    <div class="offerslistrow">
+                                        <div class="offerslistrow__logos">
+                                            <div class="name">
+                                                <img src="img/main/logo2.png" alt="logo">
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__rating">
+                                            <div class="ratingwrapper">
+                                                <div class="generalration">
+                                                    <img src="img/main/star.svg" alt="rating">
+                                                    <span>
+                                                        5.0
+                                                    </span>
+                                                </div>
+                                                <div class="stars-rating">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__descr">
+                                            <p class="title">offer from Coinbase</p>
+                                            <p>
+                                                Coinbase Global, Inc. under the brand name Coinbase is a publicly traded
+                                                American
+                                                company that operates a cryptocurrency exchange platform.
+                                            </p>
+                                        </div>
+                                        <div class="offerslistrow__explore">
+                                            <a href="#" class="abluebtn">
+                                                Explore Offer
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        *Terms & Conditions: Alias animi labque, deserunt distinctio eum excepturi fuga
+                                        iure
+                                        labore
+                                        magni molestias mollitia natus, officia pofro Alias architecto asperiores,
+                                        dignissimos illum
+                                        ipsam ipsum itaque, natus necessitatibus officiis, perferendis quae sed ullam
+                                        veniam
+                                        vitae
+                                        voluptas
+                                    </p>
+                                </div>
+                                <div class="offerslistrow-wrap">
+                                    <div class="offerslistrow">
+                                        <div class="offerslistrow__logos">
+                                            <div class="name">
+                                                <img src="img/main/logo3.png" alt="logo">
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__rating">
+                                            <div class="ratingwrapper">
+                                                <div class="generalration">
+                                                    <img src="img/main/star.svg" alt="rating">
+                                                    <span>
+                                                        4.6
+                                                    </span>
+                                                </div>
+                                                <div class="stars-rating">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star1.svg" alt="img">
+                                                    <img src="img/main/rating-star3.svg" alt="img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="offerslistrow__descr">
+                                            <p class="title">offer from Kraken</p>
+                                            <p>
+                                                Kraken security rating Is AAA with 100% security score. Overall, the
+                                                exchange is
+                                                fully
+                                                certified with approved penetration test, with ongoing bug bounty, and
+                                                with
+                                                proof of
+                                                reserves audit.
+                                            </p>
+                                        </div>
+                                        <div class="offerslistrow__explore">
+                                            <a href="#" class="abluebtn">
+                                                Explore Offer
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        *Terms & Conditions: Alias animi labque, deserunt distinctio eum excepturi fuga
+                                        iure
+                                        labore
+                                        magni molestias mollitia natus, officia pofro Alias architecto asperiores,
+                                        dignissimos illum
+                                        ipsam ipsum itaque, natus necessitatibus officiis, perferendis quae sed ullam
+                                        veniam
+                                        vitae
+                                        voluptas
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3>
+                                The Transition Process
+                            </h3>
+
+                            <p>
+                                The transition to Ethereum 2.0 is being implemented in multiple phases to ensure a
+                                smooth
+                                and secure upgrade. The first phase, known as Phase 0, launched in December 2020 with
+                                the
+                                introduction of the Beacon Chain, a PoS blockchain that runs parallel to the existing
+                                Ethereum network. Subsequent phases will integrate shard chains (Phase 1) and merge the
+                                existing Ethereum network with the Beacon Chain (Phase 1.5 and Phase 2).
+                            </p>
+
+                            <img src="img/article/article-img4.png" alt="img">
+
+                            <h3>Conclusion</h3>
+                            <p>
+                                Ethereum 2.0 represents a monumental leap forward for the Ethereum network and the
+                                broader
+                                blockchain ecosystem. The shift to a proof-of-stake consensus mechanism, coupled with
+                                the
+                                introduction of shard chains, promises to enhance the network's efficiency, security,
+                                and
+                                scalability. As Ethereum 2.0 continues to evolve, it is poised to unlock new
+                                possibilities
+                                for decentralized applications and drive the next wave of blockchain innovation.
+                            </p>
 
 
 
 
-                    </article>
+                        </article>
+                    </div>
+                    <div class="col-xl-5 text-end">
+                        <div class="article-rightsect text-start">
+                            <div class="disclim">
+                                <p>
+                                    <b>Disclaimer:</b> The information provided in this article is intended solely for
+                                    educational and informational purposes. CryptoCompass does not provide financial,
+                                    investment, or legal advice. Cryptocurrency investments carry risk, and it is
+                                    essential to conduct your own research and consult with a qualified financial
+                                    advisor before making any investment decisions. Always exercise caution and make
+                                    informed choices when dealing with cryptocurrencies.
+                                </p>
+                            </div>
+
+                            <div class="bnbox">
+                                <img class="bnbox__bg" src="img/article/bnbg.jpg" alt="bg">
+                                <div class="bnbox__descr">
+                                    <p class="title">
+                                        CryptoX: Your Gateway to Digital Wealth
+                                    </p>
+                                    <a href="#" class="abluebtn">Learn more</a>
+                                </div>
+                                <span class="copyright-text">
+                                    ©
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xl-5"></div>
+            </div>
+
+            <div class="alsolike">
+                <div class="container">
+                    <p class="title">
+                        You might also like
+                    </p>
+                    <div class="slider-wrapper">
+                        <div class="swiper alsolikeslider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="alsolikebox">
+                                        <div class="imgwrap">
+                                            <img src="img/article/alsolike1.jpg" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p class="title">
+                                                Ripple Expands Global Partnerships
+                                            </p>
+                                            <p class="date">
+                                                1h. Ago
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="alsolikebox">
+                                        <div class="imgwrap">
+                                            <img src="img/article/alsolike2.jpg" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p class="title">
+                                                Cardano Introduces Smart Contracts
+                                            </p>
+                                            <p class="date">
+                                                07.21.2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="alsolikebox">
+                                        <div class="imgwrap">
+                                            <img src="img/article/alsolike3.jpg" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p class="title">
+                                                Dogecoin Gains Traction with Major Retailers
+                                            </p>
+                                            <p class="date">
+                                                07.14.2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="alsolikebox">
+                                        <div class="imgwrap">
+                                            <img src="img/article/alsolike2.jpg" alt="img">
+                                        </div>
+                                        <div class="descr">
+                                            <p class="title">
+                                                Cardano Introduces Smart Contracts
+                                            </p>
+                                            <p class="date">
+                                                07.21.2024
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -557,10 +1004,11 @@
         </div>
     </footer>
 
-
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
     <script src="js/lib/datatables.js"></script>
+    <script src="js/lib/fancybox.js"></script>
+    <script src="js/lib/plyr.js"></script>
     <script src="js/main.js"></script>
 </body>
 

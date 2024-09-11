@@ -440,12 +440,21 @@ table.dataTable>tbody>tr>td,
 table.dataTable thead>tr>th {
     background: transparent;
     box-shadow: none !important;
+    // box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.054);
     text-align: right;
     color: #121212;
 
     &.text-left {
         text-align: left;
     }
+}
+
+table.dataTable tbody tr {
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: inset 0 0 0 9999px #EEF7F5;
+   }
 }
 
 .tblcoinname {

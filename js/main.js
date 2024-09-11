@@ -90,9 +90,8 @@ $(document).ready(function () {
 
         });
     }
-    
-    // hero slider
 
+    // hero slider
     var swiper = new Swiper(".heroslider", {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -131,8 +130,95 @@ $(document).ready(function () {
             fixedColumns: false,
         });
 
-      
+
     }
+
+
+    // fancybox
+    if ($('[data-fancybox]').length) {
+        Fancybox.bind("[data-fancybox]", {
+
+        });
+    }
+    
+
+    
+    if ($('video').length > 0) {
+        const player = new Plyr('#player');
+    }
+
+    
+    // var swiper = new Swiper(".alsolikeslider", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 20,
+    //     speed: 1000,
+    //     loop: true,
+
+    //     autoplay: {
+    //         delay: 5000,
+    //         disableOnInteraction: false,
+    //     },
+
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+
+    //     breakpoints: {
+    //         992: {
+    //             slidesPerView: 3,
+    //         },
+
+    //         767: {
+    //             slidesPerView: 2,
+    //         },
+
+           
+            
+    //     },
+    // });
+
+    var swiper2 = null; // спочатку слайдер не ініціалізований
+
+    function initSwiper() {
+        if (window.innerWidth >= 575 && swiper2 === null) {
+            swiper2 = new Swiper(".alsolikeslider", {
+                spaceBetween: 20,
+                speed: 1000,
+                loop: true,
+    
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+    
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+    
+                breakpoints: {
+                    992: {
+                        slidesPerView: 3,
+                    },
+                    767: {
+                        slidesPerView: 2,
+                    },
+                }
+            });
+        } else if (window.innerWidth < 575 && swiper2 !== null) {
+            swiper2.destroy(true, true);  // Знищуємо слайдер при малих розмірах
+            swiper2 = null;
+        }
+    }
+    
+    // Ініціалізація при завантаженні сторінки
+    initSwiper();
+    
+    // Відслідковуємо зміну розміру вікна
+    window.addEventListener('resize', function () {
+        initSwiper();
+    });
 
 
 })
