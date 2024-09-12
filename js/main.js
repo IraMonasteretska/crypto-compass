@@ -92,6 +92,7 @@ $(document).ready(function () {
     }
 
     // hero slider
+
     var swiper = new Swiper(".heroslider", {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -219,6 +220,5 @@ $(document).ready(function () {
     window.addEventListener('resize', function () {
         initSwiper();
     });
-
 
 })

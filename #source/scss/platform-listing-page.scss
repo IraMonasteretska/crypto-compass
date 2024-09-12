@@ -1,0 +1,118 @@
+.herosecr.plp {
+    padding-top: 45px;
+
+    .heroscreengrid {
+        transform: translateY(-40%);
+    }
+
+    .breadcrumbsbox {
+        padding-top: 15px;
+    }
+
+    .imgwrap img {
+        margin-top: -20px;
+    }
+}
+
+.offerlistwrap {
+    margin-top: 60px;
+
+    .tablesection__sortrow {
+        align-items: center;
+        display: flex;
+
+        button {
+            padding: 5px 16px;
+        }
+    }
+
+    .leftsect {
+        width: 100%;
+        max-width: calc(100% - 300px);
+        flex: 0 0 calc(100% - 300px);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .rightsect {
+        width: 100%;
+        max-width: 300px;
+        flex: 0 0 300px;
+        text-align: right;
+
+        p {
+            margin: 0;
+            color: $second-text;
+
+            img {
+                vertical-align: middle;
+                margin-top: -3px;
+            }
+        }
+    }
+}
+
+.offerslists__colname {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 50px;
+    flex-wrap: wrap;
+
+    p {
+        margin: 0;
+        color: rgba(141, 141, 141, 1);
+        font-weight: 500;
+        padding-left: 20px;
+        width: 100%;
+
+
+        &:nth-child(1) {
+            max-width: 21%;
+            flex: 0 0 21%;
+        }
+
+        &:nth-child(2) {
+            max-width: 11%;
+            flex: 0 0 11%;
+        }
+
+        &:nth-child(3) {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+
+        &:nth-child(4) {
+            max-width: 18%;
+            flex: 0 0 18%;
+        }
+    }
+}
+
+.offerslists {
+    .offerslistrow .offerslistrow__descr .title {
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+
+    .offerslistrow .offerslistrow__explore {
+        text-align: center;
+    }
+
+    a:not(.abluebtn) {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 18px;
+        color: $main-dark-text;
+        line-height: 130%;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.articlebox__descr {
+    border-top: 1px solid #D8D8D8;
+}
