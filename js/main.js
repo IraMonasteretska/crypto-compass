@@ -312,5 +312,30 @@ $(document).ready(function () {
         $(this).addClass('active');
     })
 
+    // filter open
+    $('.filter-btn').click(function(){
+        $('.category-filter').addClass('active');
+    });
+
+    $('.closefilter').click(function(){
+        $('.category-filter').removeClass('active');
+    });
+
+    // category products in row
+    $('.category-topsection__right button').click(function(){
+        $('.category-topsection__right button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.inrow').click(function(){
+        $('.category-products').addClass('rowsect');
+    })
+    $('.inbox').click(function(){
+        $('.category-products').removeClass('rowsect');
+    })
+
+
+
+    
 
 })
