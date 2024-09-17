@@ -118,7 +118,7 @@ $(document).ready(function () {
     });
 
     // data tables
-    if ($('.sorttable').length) {
+    if ($('.sorttable.t1').length) {
         $('#myTable').DataTable({
             "dom": 'rt<"bottom"ipl><"clear">',
             "language": {
@@ -130,8 +130,6 @@ $(document).ready(function () {
             "scrollX": true,
             fixedColumns: false,
         });
-
-
     }
 
 
@@ -293,10 +291,8 @@ $(document).ready(function () {
         });
     });
 
-
-
     // styled selects
-    if ($('select').length) {
+    if ($('.styledselect').length) {
         $('.styledselect').select2({
             // placeholder: "Project Type*",
             minimumResultsForSearch: Infinity,
@@ -307,35 +303,105 @@ $(document).ready(function () {
         $(this).parent('.selectedfilter__box').remove();
     })
 
-    $('.category-topsection__right button').click(function(){
+    $('.category-topsection__right button').click(function () {
         $('.category-topsection__right button').removeClass('active');
         $(this).addClass('active');
     })
 
     // filter open
-    $('.filter-btn').click(function(){
+    $('.filter-btn').click(function () {
         $('.category-filter').addClass('active');
     });
 
-    $('.closefilter').click(function(){
+    $('.closefilter').click(function () {
         $('.category-filter').removeClass('active');
     });
 
     // category products in row
-    $('.category-topsection__right button').click(function(){
+    $('.category-topsection__right button').click(function () {
         $('.category-topsection__right button').removeClass('active');
         $(this).addClass('active');
     });
 
-    $('.inrow').click(function(){
+    $('.inrow').click(function () {
         $('.category-products').addClass('rowsect');
     })
-    $('.inbox').click(function(){
+    $('.inbox').click(function () {
         $('.category-products').removeClass('rowsect');
     })
 
+    // -----Product Slider------
+    if ($('.productslider').length) {
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 15,
+            slidesPerView: 3,
+            breakpoints: {
+                1199: {
+                    slidesPerView: 4,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                575: {
+                    slidesPerView: 3,
+                },
+
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
+
+    // product tabs
+    $('.producttabs__tabbtn').click(function(){
+        $('.producttabs__tabbtn').removeClass('active');
+        $(this).addClass('active')
+    })
+
+   
+
+    $('.producttabs__tabbtn').on('click', function() {
+        // Видаляємо клас active у всіх кнопок
+        $('.producttabs__tabbtn').removeClass('active');
+        
+        // Додаємо клас active до натиснутої кнопки
+        $(this).addClass('active');
+        
+        // Отримуємо індекс натиснутої кнопки
+        var index = $(this).index();
+        
+        // Ховаємо всі вкладки
+        $('.producttabs__tab').addClass('hide');
+        
+        // Показуємо відповідну вкладку за індексом
+        $('.producttabs__tab').eq(index).removeClass('hide');
+    });
+
+    // product table
+    if ($('.sorttable.t2').length) {
+        $('#myTable').DataTable({
+            "dom": 'rt<"bottom"ipl><"clear">',
+            "language": {
+                "info": "Showing _START_ - _END_ out of _TOTAL_",
+                "lengthMenu": "Show rows: _MENU_"
+            },
+            "paging": false ,
+            "lengthChange": true,
+            "scrollX": true,
+            fixedColumns: false,
+            "info": false
+        });
+    }
 
 
-    
 
 })

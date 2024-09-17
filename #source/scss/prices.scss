@@ -584,22 +584,47 @@ div.dt-container .dt-paging .dt-paging-button {
 div.dt-container .dt-paging .dt-paging-button.dt-paging-button.previous {
     width: 38px;
     height: 38px;
-    background: url('../img/prices/pag-prev.png') no-repeat center / 100% !important;
+    // background: url('../img/general/arr-left.svg') no-repeat center / 100% !important;
     text-indent: -9999px;
     padding: 0 !important;
     cursor: pointer;
     border: none !important;
+    background-color: rgb(165, 225, 211);
+    background-image: url('../img/general/arr-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: rgb(53, 88, 110);
+        background-image: url('../img/general/arr-left-white.svg');
+    }
 }
 
 div.dt-container .dt-paging .dt-paging-button.dt-paging-button.next {
     width: 38px;
     height: 38px;
-    background: url('../img/prices/pag-next.png') no-repeat center / 100% !important;
+    // background: url('../img/general/arr-right.svg') no-repeat center / 100% !important;
     text-indent: -9999px;
     padding: 0 !important;
     cursor: pointer;
     border: none !important;
+    background-color: rgb(165, 225, 211);
+    background-image: url('../img/general/arr-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: rgb(53, 88, 110);
+        background-image: url('../img/general/arr-right-white.svg');
+    }
 }
+
 
 
 
