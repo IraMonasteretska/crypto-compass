@@ -510,5 +510,33 @@
         padding: 5px 15px;
     }
 
-  
+    table.dataTable.row-border>tbody>tr>*,
+     table.dataTable.display>tbody>tr>* {
+        &:nth-child(1) {
+            max-width: 300px !important;
+            min-width: 300px !important;
+        }
+
+        max-width: 100px !important;
+        min-width: 100px !important;
+    }
+
+    .producttable .tcompanybox .imgwrap {
+        max-width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .producttable .tcompanybox .name {
+        max-width: calc(100% - 100px);
+        flex: calc(100% - 100px);
+        font-size: 16px;
+    }
+
+    .producttable .dt-scroll-body table, .dt-scroll-headInner table {
+        width: 1000px !important;
+    }
+
+    .producttable .tcountry p {
+        font-size: 16px;
+    }
 }
