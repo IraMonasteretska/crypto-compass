@@ -234,6 +234,19 @@
         width: 24px;
         height: 24px;
         filter: invert(1);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            background: rgba(53, 88, 110, 1);
+
+            svg {
+                fill: #000;
+            }
+        }
     }
 }
 
@@ -909,6 +922,5 @@ article {
     }
    
 }
-
 
 

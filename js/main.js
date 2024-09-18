@@ -146,48 +146,50 @@ $(document).ready(function () {
         const player = new Plyr('#player');
     }
 
-    var swiper2 = null; // спочатку слайдер не ініціалізований
 
-    function initSwiper() {
-        if (window.innerWidth >= 575 && swiper2 === null) {
-            swiper2 = new Swiper(".alsolikeslider", {
-                spaceBetween: 20,
-                speed: 1000,
-                loop: true,
+    if ($('.alsolikeslider').length > 0) {
+        var swiper2 = null; // спочатку слайдер не ініціалізований
 
-                autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
+        function initSwiper() {
+            if (window.innerWidth >= 575 && swiper2 === null) {
+                swiper2 = new Swiper(".alsolikeslider", {
+                    spaceBetween: 20,
+                    speed: 1000,
+                    loop: true,
 
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-
-                breakpoints: {
-                    992: {
-                        slidesPerView: 3,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
                     },
-                    767: {
-                        slidesPerView: 2,
+
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
                     },
-                }
-            });
-        } else if (window.innerWidth < 575 && swiper2 !== null) {
-            swiper2.destroy(true, true);  // Знищуємо слайдер при малих розмірах
-            swiper2 = null;
+
+                    breakpoints: {
+                        992: {
+                            slidesPerView: 3,
+                        },
+                        767: {
+                            slidesPerView: 2,
+                        },
+                    }
+                });
+            } else if (window.innerWidth < 575 && swiper2 !== null) {
+                swiper2.destroy(true, true);  // Знищуємо слайдер при малих розмірах
+                swiper2 = null;
+            }
         }
-    }
 
-    // Ініціалізація при завантаженні сторінки
-    initSwiper();
-
-    // Відслідковуємо зміну розміру вікна
-    window.addEventListener('resize', function () {
+        // Ініціалізація при завантаженні сторінки
         initSwiper();
-    });
 
+        // Відслідковуємо зміну розміру вікна
+        window.addEventListener('resize', function () {
+            initSwiper();
+        });
+    }
     // category page
     $('.catfilter-box__title').click(function () {
         $(this).toggleClass('rotate');
@@ -362,26 +364,26 @@ $(document).ready(function () {
     }
 
     // product tabs
-    $('.producttabs__tabbtn').click(function(){
+    $('.producttabs__tabbtn').click(function () {
         $('.producttabs__tabbtn').removeClass('active');
         $(this).addClass('active')
     })
 
-   
 
-    $('.producttabs__tabbtn').on('click', function() {
+
+    $('.producttabs__tabbtn').on('click', function () {
         // Видаляємо клас active у всіх кнопок
         $('.producttabs__tabbtn').removeClass('active');
-        
+
         // Додаємо клас active до натиснутої кнопки
         $(this).addClass('active');
-        
+
         // Отримуємо індекс натиснутої кнопки
         var index = $(this).index();
-        
+
         // Ховаємо всі вкладки
         $('.producttabs__tab').addClass('hide');
-        
+
         // Показуємо відповідну вкладку за індексом
         $('.producttabs__tab').eq(index).removeClass('hide');
     });
@@ -394,7 +396,7 @@ $(document).ready(function () {
                 "info": "Showing _START_ - _END_ out of _TOTAL_",
                 "lengthMenu": "Show rows: _MENU_"
             },
-            "paging": false ,
+            "paging": false,
             "lengthChange": true,
             "scrollX": true,
             fixedColumns: false,
