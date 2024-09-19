@@ -403,38 +403,38 @@ $(document).ready(function () {
     //         "info": false
     //     });
     // }
-
-    function initializeDataTable() {
-        if ($(window).width() > 576) {
-            if (!$.fn.DataTable.isDataTable('#myTable')) {
-                $('#myTable').DataTable({
-                    "dom": 'rt<"bottom"ipl><"clear">',
-                    "language": {
-                        "info": "Showing _START_ - _END_ out of _TOTAL_",
-                        "lengthMenu": "Show rows: _MENU_"
-                    },
-                    "paging": false,
-                    "lengthChange": true,
-                    "scrollX": true,
-                    fixedColumns: false,
-                    "info": false
-                });
-            }
-        } else {
-            if ($.fn.DataTable.isDataTable('#myTable')) {
-                $('#myTable').DataTable().destroy();
+    if ($('.sorttable.t2').length) {
+        function initializeDataTable() {
+            if ($(window).width() > 576) {
+                if (!$.fn.DataTable.isDataTable('#myTable')) {
+                    $('#myTable').DataTable({
+                        "dom": 'rt<"bottom"ipl><"clear">',
+                        "language": {
+                            "info": "Showing _START_ - _END_ out of _TOTAL_",
+                            "lengthMenu": "Show rows: _MENU_"
+                        },
+                        "paging": false,
+                        "lengthChange": true,
+                        "scrollX": true,
+                        fixedColumns: false,
+                        "info": false
+                    });
+                }
+            } else {
+                if ($.fn.DataTable.isDataTable('#myTable')) {
+                    $('#myTable').DataTable().destroy();
+                }
             }
         }
-    }
-    
-    // Ініціалізація при завантаженні сторінки
-    initializeDataTable();
-    
-    // Відстеження зміни розміру вікна
-    $(window).resize(function() {
-        initializeDataTable();
-    });
 
+        // Ініціалізація при завантаженні сторінки
+        initializeDataTable();
+
+        // Відстеження зміни розміру вікна
+        $(window).resize(function () {
+            initializeDataTable();
+        });
+    }
 
 
 })
