@@ -91,7 +91,7 @@
 
     h1 {
         margin-bottom: 50px;
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 500;
         line-height: 130%;
         color: $main-dark-text;
@@ -189,20 +189,20 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        height: 80px;
+        height: 58px;
         transition: 0.3s;
         border: 1px solid #D8D8D8;
         width: 100%;
         max-width: 50%;
         flex: 0 0 50%;
-        font-size: 22px;
+        font-size: 20px;
         color: $main-dark-text;
         font-weight: 500;
         cursor: pointer;
 
         &.active {
-            background: #35586E;
-            color: #fff;
+            background: #ECEEF0;
+            border-color: #35586E;
         }
 
         &:nth-child(1) {
@@ -211,6 +211,10 @@
 
         &:nth-child(2) {
             border-radius: 0 4px 4px 0;
+        }
+
+        &:hover {
+            background: #eceef038;
         }
     }
 }
@@ -281,7 +285,7 @@
             flex: calc(100% - 200px);
             margin: 0;
         }
-        
+
     }
 
     .pl-btn {
@@ -374,6 +378,9 @@
 
 
 @media(max-width:1599.8px) {
+    .productdescr h1 {
+        font-size: 32px;
+    }
 
     .productinfosect {
         padding: 40px 0 80px;
@@ -413,7 +420,6 @@
 
     .producttabs__header .producttabs__tabbtn {
         font-size: 20px;
-        height: 70px;
     }
 
 
@@ -451,9 +457,10 @@
     .producttabs__header .producttabs__tabbtn {
         font-size: 18px;
     }
-    
+
     .producttable .tcompanybox {
         min-width: 300px;
+
         .imgwrap {
             max-width: 150px;
             flex: 0 0 150px;
@@ -472,7 +479,8 @@
         min-width: initial;
     }
 
-    table.dataTable.row-border>tbody>tr>*, table.dataTable.display>tbody>tr>* {
+    table.dataTable.row-border>tbody>tr>*,
+    table.dataTable.display>tbody>tr>* {
         max-width: 240px !important;
         min-width: 200px !important;
     }
@@ -507,11 +515,11 @@
 
     .producttabs__header .producttabs__tabbtn {
         font-size: 16px;
-        padding: 5px 15px;
+        padding: 5px 10px;
     }
 
     table.dataTable.row-border>tbody>tr>*,
-     table.dataTable.display>tbody>tr>* {
+    table.dataTable.display>tbody>tr>* {
         &:nth-child(1) {
             max-width: 300px !important;
             min-width: 300px !important;
@@ -532,11 +540,116 @@
         font-size: 16px;
     }
 
-    .producttable .dt-scroll-body table, .dt-scroll-headInner table {
+    .producttable .dt-scroll-body table,
+    .dt-scroll-headInner table {
         width: 1000px !important;
     }
 
     .producttable .tcountry p {
         font-size: 16px;
     }
+
+    .producttable {
+        thead {
+            display: none;
+        }
+
+        tr,
+        td {
+            display: block;
+        }
+
+        tr {
+            border: 1px solid #D8D8D8;
+            margin-bottom: 20px;
+            padding: 0 20px 20px 20px;
+            align-items: center;
+            border-radius: 4px;
+            // background: #f5f5f5;
+            display: flex;
+            flex-wrap: wrap;
+
+            td {
+                width: 100%;
+                max-width: 100%;
+                flex: 0 0 100%;
+
+                &:nth-child(1) {
+                    border-bottom: 1px solid #D8D8D8;
+                }
+
+                &:nth-child(4),
+                &:nth-child(5) {
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                }
+            }
+        }
+    }
+
+    .producttable .sorttable.t2 {
+        width: 100%;
+
+        .tcompanybox {
+            display: block;
+            text-align: center;
+
+            .imgwrap {
+                width: 100%;
+                max-width: 100%;
+
+                img {
+                    max-height: 80px;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .tcompanybox .name {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        .tcountry {
+            .imgwrap {
+                order: 1;
+            }
+
+            p {
+                order: 2;
+                padding-left: 10px;
+            }
+        }
+
+        .pl-btn .abluebtn {
+            width: 100%;
+        }
+
+        .tcountry {
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .tshippingcosts {
+            padding-top: 5px;
+        }
+
+        .ttotalcost {
+            // border-top: 1px solid #D8D8D8;
+            margin-top: 3px;
+            padding: 10px 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
 }

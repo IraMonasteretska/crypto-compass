@@ -563,6 +563,10 @@
 
 }
 
+.usefulinfo.mt {
+    margin-top: 80px;
+}
+
 
 @media(max-width:1599.8px) {
     .catproductbox .imgwrap {
@@ -799,6 +803,11 @@
             font-weight: 500;
         }
     }
+
+    .usefulinfo.mt {
+        margin-top: 50px;
+    }
+    
 }
 
 @media(max-width:575.8px) {
@@ -847,6 +856,10 @@
 
     .catfilter-box .catfilter-box__filling {
         padding-bottom: 20px;
+    }
+
+    .usefulinfo.mt {
+        margin-top: 30px;
     }
 
 }

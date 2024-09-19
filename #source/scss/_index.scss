@@ -807,10 +807,6 @@
 }
 
 
-
-
-
-
 @media(max-width:1599.8px) {
 
     .mainsldslide h2 {
@@ -1236,6 +1232,24 @@
         max-width: calc(100% - 80px);
     }
 
+    .linkssection .linkbox .descr .title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .linkssection .linkbox {
+        min-height: initial;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .linkssection .col-lg-4 {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-section {
+        padding-top: 40px;
+    }
 
 }
 
@@ -1452,10 +1466,52 @@
         height: auto;
     }
 
+    .mainsldslide {
+        height: 400px;
+    }
 
+    .mainsldslide__info {
+        padding: 15px 20px;
+    }
 
+    .mainsldslide__logo {
+        top: 15px;
+        margin: 0;
+    }
 
+    .mainsldslide h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
 
+    .mainsldslide p {
+        font-size: 15px;
+        line-height: 150%;
+    }
+
+    .mainsldslide a {
+        margin: 15px auto 0;
+    }
+
+    .mainslidersection {
+        padding: 15px 0;
+    }
+
+    .linkssection .linkbox {
+        padding: 10px;
+    }
+
+    .linkssection .linkbox .descr p:not(.title) {
+        display: none;
+    }
+
+    .linkssection .linkbox .descr {
+        padding-left: 10px;
+    }
+
+    .linkssection .col-lg-4 {
+        margin-bottom: 5px;
+    }
 
 
 
@@ -1493,4 +1549,48 @@
         padding: 50px 0;
     }
 
+    .linkssection .linkbox .descr .title {
+        font-size: 15px;
+        margin-bottom: 5px;
+        line-height: 120%;
+    }
+
+
+}
+
+
+@media(min-width:1260px) and (max-height:800px) {
+    .mainsldslide h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .mainsldslide__logo {
+        margin-bottom: 30px;
+    }
+
+    .mainsldslide a {
+        margin-top: 30px;
+    }
+}
+
+@media(min-width:1260px) and (max-height:750px) {
+    .mainsldslide__info {
+        padding: 30px 20px 0 30px;
+    }
+
+    .linkssection .linkbox .descr .title {
+        margin-bottom: 5px;
+    }
+
+    .linkssection .linkbox {
+        min-height: 100px;
+    }
+}
+
+@media(min-width:1260px) and (max-height:850px) {
+    .mainsldslide {
+        height: calc(100vh - 250px);
+        min-height: 430px;
+    }
 }
