@@ -384,6 +384,7 @@
     display: block;
     text-transform: capitalize;
     line-height: 1;
+    margin-bottom: 2px;
 }
 
 .producttable .sorttable.t2 .pl-btn .abluebtn {
@@ -517,6 +518,7 @@ colgroup {
 }
 
 @media(max-width:991.8px) {
+
     .productdescr {
         margin-top: 40px;
     }
