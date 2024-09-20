@@ -405,7 +405,7 @@ $(document).ready(function () {
     // }
     if ($('.sorttable.t2').length) {
         function initializeDataTable() {
-            if ($(window).width() > 576) {
+            if ($(window).width() > 991) {
                 if (!$.fn.DataTable.isDataTable('#myTable')) {
                     $('#myTable').DataTable({
                         "dom": 'rt<"bottom"ipl><"clear">',

@@ -376,6 +376,17 @@
     margin-bottom: 5px;
 }
 
+.chipsfrom {
+    font-size: 14px;
+    color: #8D8D8D;
+    display: block;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
+.producttable .sorttable.t2 .pl-btn .abluebtn {
+    text-transform: capitalize;
+}
 
 @media(max-width:1599.8px) {
     .productdescr h1 {
@@ -490,6 +501,129 @@
         max-width: calc(50% - 10px);
         flex: 0 0 calc(50% - 10px);
     }
+
+    // --------------------
+
+
+
+
+
+
+
+    .producttable {
+        thead {
+            display: none;
+        }
+
+        tr,
+        td {
+            display: block;
+        }
+
+        tr {
+            border: 1px solid #D8D8D8;
+            margin-bottom: 20px;
+            padding: 0 20px 20px 20px;
+            align-items: center;
+            border-radius: 4px;
+            // background: #f5f5f5;
+            display: flex;
+            flex-wrap: wrap;
+
+            td {
+                width: 100%;
+                max-width: 100%;
+                flex: 0 0 100%;
+
+                &:nth-child(1) {
+                    border-bottom: 1px solid #D8D8D8;
+                    margin-bottom: 10px;
+                }
+
+                // &:nth-child(4),
+                // &:nth-child(5) {
+                //     max-width: 50%;
+                //     flex: 0 0 50%;
+                // }
+            }
+        }
+    }
+
+    .producttable .sorttable.t2 {
+        width: 100%;
+
+        .tcompanybox {
+            display: block;
+            text-align: center;
+
+            .imgwrap {
+                width: 100%;
+                max-width: 100%;
+
+                img {
+                    max-height: 80px;
+                    vertical-align: top;
+                }
+            }
+        }
+
+        .tcompanybox .name {
+            text-align: left;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        .tcountry {
+            .imgwrap {
+                order: 1;
+            }
+
+            p {
+                order: 2;
+                padding-left: 10px;
+            }
+        }
+
+        .pl-btn .abluebtn {
+            width: 100%;
+        }
+
+        .tcountry {
+            margin-bottom: 5px;
+
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .tshippingcosts {
+            padding-top: 5px;
+        }
+
+        .ttotalcost {
+            // border-top: 1px solid #D8D8D8;
+            margin-top: 3px;
+            padding: 10px 0;
+        }
+    }
+
+    .producttable .sorttable.t2 .ttotalcost {
+        font-size: 28px;
+        margin: 5px 0;
+    }
+
+    .producttable .tcountry p {
+        font-size: 24px;
+    }
+
+    .producttable .tshippingcosts p span {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    
+    .producttable .sorttable.t2 .ttotalcost {
+        text-align: right;
+    }
 }
 
 @media(max-width:575.8px) {
@@ -548,102 +682,14 @@
     .producttable .tcountry p {
         font-size: 16px;
     }
-
-    .producttable {
-        thead {
-            display: none;
-        }
-
-        tr,
-        td {
-            display: block;
-        }
-
-        tr {
-            border: 1px solid #D8D8D8;
-            margin-bottom: 20px;
-            padding: 0 20px 20px 20px;
-            align-items: center;
-            border-radius: 4px;
-            // background: #f5f5f5;
-            display: flex;
-            flex-wrap: wrap;
-
-            td {
-                width: 100%;
-                max-width: 100%;
-                flex: 0 0 100%;
-
-                &:nth-child(1) {
-                    border-bottom: 1px solid #D8D8D8;
-                }
-
-                &:nth-child(4),
-                &:nth-child(5) {
-                    max-width: 50%;
-                    flex: 0 0 50%;
-                }
-            }
-        }
+    // ---
+    .producttable .tshippingcosts p span {
+        font-size: 20px;
     }
 
-    .producttable .sorttable.t2 {
-        width: 100%;
-
-        .tcompanybox {
-            display: block;
-            text-align: center;
-
-            .imgwrap {
-                width: 100%;
-                max-width: 100%;
-
-                img {
-                    max-height: 80px;
-                    vertical-align: top;
-                }
-            }
-        }
-
-        .tcompanybox .name {
-            text-align: left;
-            padding: 0;
-            margin-bottom: 5px;
-        }
-
-        .tcountry {
-            .imgwrap {
-                order: 1;
-            }
-
-            p {
-                order: 2;
-                padding-left: 10px;
-            }
-        }
-
-        .pl-btn .abluebtn {
-            width: 100%;
-        }
-
-        .tcountry {
-            p {
-                font-weight: 500;
-            }
-        }
-
-        .tshippingcosts {
-            padding-top: 5px;
-        }
-
-        .ttotalcost {
-            // border-top: 1px solid #D8D8D8;
-            margin-top: 3px;
-            padding: 10px 0;
-        }
+    .producttable .sorttable.t2 .ttotalcost {
+        font-size: 30px;
     }
-
-
 
 
 
