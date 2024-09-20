@@ -679,6 +679,14 @@ colgroup {
         text-align: right;
     }
 
+    .avaibtext {
+        font-size: 24px;
+
+        span {
+            margin-bottom: 5px;
+        }
+    }
+
     .chipsfrom,
     .avaibtext span {
         line-height: 130%;
@@ -753,8 +761,15 @@ colgroup {
         min-width: initial !important;
     }
 
-    .producttable .tshippingcosts p  {
-        font-size: 18px;
+    .producttable .tshippingcosts p,
+    .avaibtext  {
+        font-size: 16px;
+    }
+
+    .avaibtext {
+        span {
+            margin-bottom: 0;
+        }
     }
 
     .producttable .sorttable.t2 .ttotalcost {
