@@ -1,0 +1,125 @@
+.findresult {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    background: linear-gradient(0deg, rgba(188, 207, 211, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+    h1 {
+        color: #121212;
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 130%;
+
+        span {
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-underline-offset: 12px;
+        }
+    }
+}
+
+.resultsection {
+    padding: 80px 0;
+}
+
+.result-item {
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .title {
+        display: inline-block;
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: #121212;
+        line-height: 130%;
+        transition: .4s;
+        position: relative;
+        text-transform: capitalize;
+
+        &:before {
+            content: '';
+            transition: .6s;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            height: 1px;
+            width: 0;
+            background-color: #35586E;
+
+        }
+
+        &:hover {
+            color: #35586E;
+            &:before{
+                width: 100%;
+            }
+
+        }
+    }
+
+    .descr {
+        color: #333333;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+
+//  --- ADAPTIVE --- //
+
+@media (max-width: 1199.8px) {
+    .findresult {
+        height: 350px;
+    }
+    .findresult h1 {
+        font-size: 46px;
+    }
+    .resultsection {
+        padding: 65px 0;
+    }
+    .result-item .title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .findresult h1 {
+        font-size: 36px;
+    }
+    .findresult {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .result-item .title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .findresult {
+        height: 260px;
+    }
+    .findresult h1 {
+        font-size: 28px;
+        span{
+            display: block;
+        }
+    }
+    .result-item .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .resultsection {
+        padding: 55px 0;
+    }
+    .result-item {
+        margin-bottom: 40px;
+    }
+}
