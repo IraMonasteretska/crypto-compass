@@ -441,6 +441,15 @@
 }
 
 article {
+
+    h1 {
+        color: $second-blue;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 130%;
+        margin-bottom: 40px;
+    } 
+
     h2 {
         margin-bottom: 30px;
         font-weight: 500;
@@ -631,6 +640,7 @@ article {
 }
 
 @media(max-width:1599.8px) {
+    article h1,
     .article__topsect h1 {
         font-size: 36px;
     }
@@ -663,6 +673,7 @@ article {
 
 @media(max-width:1399.8px) {
 
+    article h1,
     .article__topsect h1 {
         font-size: 32px;
         margin-bottom: 30px;
@@ -708,8 +719,7 @@ article {
         margin-bottom: 5px;
     }
 
-    article h3,
-    article h3 {
+    article h3{
         font-size: 26px;
     }
 
@@ -829,6 +839,7 @@ article {
         padding: 40px 0 0 0;
     }
 
+    article h1,
     .article__topsect h1 {
         font-size: 28px;
     }
@@ -842,7 +853,7 @@ article {
         margin-bottom: 10px;
     }
 
-    article h3, article h3 {
+    article h3 {
         font-size: 24px;
     }
 
