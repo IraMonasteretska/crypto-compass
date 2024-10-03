@@ -380,7 +380,8 @@
     }
 }
 
-.sorttable {
+.sorttable,
+.prices-page .dt-container .dt-scroll-head table {
     padding-top: 30px;
 
     thead tr th {
@@ -430,7 +431,8 @@ table.dataTable thead th {
     color: #121212;
 }
 
-.sorttable th:not(.sort) {
+.sorttable th:not(.sort),
+.prices-page .dt-container .dt-scroll-head table th:not(.sort) {
     pointer-events: none;
 
     .dt-column-order {
@@ -512,7 +514,7 @@ table.dataTable tbody tr {
     width: 150px;
 }
 
-#myTable_wrapper {
+#myTable_wrapper, .dt-container {
     .bottom {
         padding-top: 40px;
         display: flex;
@@ -839,18 +841,24 @@ div.dt-container .dt-paging .dt-paging-button.dt-paging-button.next {
 
     #myTable_wrapper .bottom .dt-info,
     #myTable_wrapper .bottom .dt-paging,
-    #myTable_wrapper .bottom .dt-length {
+    #myTable_wrapper .bottom .dt-length,
+    .dt-container .bottom .dt-info,
+    .dt-container .bottom .dt-paging,
+    .dt-container .bottom .dt-length {
         max-width: 100%;
         flex: 0 0 100%;
         text-align: center;
     }
 
-    #myTable_wrapper .bottom {
+    #myTable_wrapper .bottom,
+    .dt-container .bottom {
         padding-top: 0;
     }
 
     #myTable_wrapper .bottom .dt-info,
-    #myTable_wrapper .bottom .dt-paging {
+    #myTable_wrapper .bottom .dt-paging,
+    .dt-container .bottom .dt-info,
+    .dt-container .bottom .dt-paging {
         margin-bottom: 25px;
     }
 
